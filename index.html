@@ -4,54 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Calculadora de Gorjetas</title>
+  <title>Calculadora</title>
 </head>
 <body>
   <div id="container">
     <div>
-      <h1 class="title">Calculadora de Gorjetas</h1>
+      <h1 class="title">Calculadora</h1>
     </div>  
 
     <div>
       <form class="tipsForm" id="tipsForm">
         <label for="bill">
-          <p>Quanto ficou a conta?</p>
+          <p>Valor total da conta</p>
         </label>
 
         <p>
-          <input type="number" placeholder="R$ 100" name="bill" id="bill" class="formInput" required>
+          <input type="number" placeholder="R$" name="bill" id="bill" class="formInput" required>
         </p>
 
         <label for="serviceQualit">
-          <p>Como foi o seu serviço?</p>
+          <p>Como foi o serviço prestado</p>
         </label>
 
         <p>
           <select name="serviceQualit" id="serviceQualit" class="formSelect" required>
             <option disabled selected value="0">Escolha uma opção</option>
-            <option value="0.3">30% - Incrível</option>
-            <option value="0.2">20% - Bom</option>
-            <option value="0.15">15% - Aceitável</option>
-            <option value="0.10">10% - Ruim</option>
-            <option value="0.05">05% - Péssimo</option>
+            <option value="0.15">15% - Excelente</option>
+            <option value="0.10">10% - Bom</option>
+            <option value="0.05">05% - Ruim</option>
+            <option value="0.00">0% - Sem gorjetas</option>
           </select>
         </p>
 
         <label for="people">
-          <p>Quantas pessoas vão dividir a conta?</p>
+          <p>Pessoas que vão dividir a conta</p>
         </label>
 
         <p>
-          <input type="number" placeholder="1" name="people" id="people" class="formInput" required> pessoa(s)
+          <input type="number" placeholder="" name="people" id="people" class="formInput" required> pessoa(s)
         </p>
 
         <button type="submit" class="formSubmit">Calcular</button>
       </form>
     </div>
 
+    <div id="totalValue">
+      Valor por Pessoa:
+      R$ <span id="tipTotal">0.00</span> <span id="each">cada</span>
+    </div>
+
     <div id="totalTips">
-      Gorjeta Total:
+      Gorjeta:
       R$ <span id="tip">0.00</span> <span id="each">cada</span>
+    </div>
+
+    <div id="totalPay">
+      Valor a Pagar:
+      R$ <span id="pay">0.00</span> <span id="each">cada</span>
     </div>
   </div>
 

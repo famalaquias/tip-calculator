@@ -13,7 +13,7 @@ body {
 }
 
 #container {
-  height: 480px;
+  height: 585px;
   width: 360px;
   margin: 100px auto;
   background-color: var(--secondary-color);
@@ -69,9 +69,21 @@ body {
   color: white;
 }
 
+#totalValue {
+  font-size: 20px;
+  margin-top: 10px;
+  margin: 20px;
+}
+
 #totalTips {
   font-size: 20px;
   margin-top: 10px;
   margin: 20px;
   /* text-align: center; */
+}
+
+#totalPay {
+  font-size: 20px;
+  margin-top: 10px;
+  margin: 20px;
 }
