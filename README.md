@@ -4,7 +4,7 @@
 
 Projeto pessoal construído para testar os conhecimentos adquiridos em HTML5, CSS3 e JavaScript Básico.
 
-[:link: Clique aqui para acessar](https://nlw-esports-explorer-ten.vercel.app/)
+[:link: Clique aqui para acessar](https://tip-calculator-5gp8.vercel.app/)
 
 
 ## :page_with_curl: Sobre
